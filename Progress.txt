@@ -1,0 +1,37 @@
+So far the water is replaced by pum, seems correct. 
+
+Might consider trying to replace some instances of underground lava with water?
+
+Need to do something for the sponges, where would they hide in this hot world?
+
+Pum sponges need a texture, possibly different appearance, more like lava rock?
+
+Sand should be swapped as well since lava and sand do not exist the same as water and sand.
+
+If I try out a pum sponge as was offered as an idea, I'll need to make the texture first, at
+least to make it unique. I might just change the color for initial testing.
+
+I think I may need to sort of conditionally swap some initial pum (smaller pockets
+in first worldgen) for a placeholder node, and then to water after the pum swap.
+
+If pum does not affect anything but burnable things or a few recipes, then I'm not
+sure I'd swap anything near the new pum placements.
+
+I could convert all trees to ash and a random eggcorn underneath the pile.
+
+MantleCore?
+
+The pumwater sponge will cool and harden in water, or over a specified amount of time if not
+ insulated with stone which will also begin to glow from proximity but not melt.
+
+Should a cold pumwater sponge chance to crumble or turn to pumice? A dry sponge can burn, can
+it crumble also or is this misremembering?
+ 
+Some of the generating code seems nearly ok, need to "create" the node somewhere.
+
+Need to eliminate pumwater from high locations, especially floating islands which allow it
+to foolishly cause pumwater falls.
+
+Incorporate wc_vulcan but disable some bits, do I want volcanoes or should those be included 
+only if that mod is added seperately?  i think I dislike some of the vulcanization effects, 
+but also, some seem useful perhaps.
