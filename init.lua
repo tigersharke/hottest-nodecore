@@ -7,10 +7,6 @@ local replacements = {}
 local function replace(old, new)
 	replacements[minetest.get_content_id(old)] = minetest.get_content_id(new)
 end
---[[
-replace("nc_terrain:water_flowing", "nc_terrain:lava_flowing")
-replace("nc_terrain:water_source", "nc_terrain:lava_source")
---]]
 
 nodecore.register_mapgen_shared({
 		label = "pumtastic",
@@ -34,9 +30,11 @@ nodecore.register_mapgen_shared({
 
 local oldsound = nodecore.sound_play
 
+--replace("nc_sponge:sponge_living","nc_pumsponge:pumsponge_zero")
 replace("nc_terrain:water_flowing", "air")
 replace("nc_terrain:water_source", "nc_terrain:lava_source")
 --replace("nc_terrain:lava_flowing", "air")
 include("terrain_blobs") 
+--replace("nc_pumsponge:zero","nc_pumsponge:pumsponge_glowing")
 --include("gen_sponge")
 include("pumsalot")
